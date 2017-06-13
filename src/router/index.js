@@ -144,6 +144,12 @@ export default new Router({
       component: function (resolve) {
         require(['../views/objectExplore'], resolve)
       }
+    },
+    {
+      path: '/hotZone',
+      component: function (resolve) {
+        require(['../views/hotZone'], resolve)
+      }
     }
   ]
 })

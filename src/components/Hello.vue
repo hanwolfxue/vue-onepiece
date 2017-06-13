@@ -18,11 +18,9 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
     </ul>
-    <ul>
-      <template v-for="item in items">
-        <li @click="pushPage(item)">{{item.name}}</li>
-      </template>
-    </ul>
+      <div v-for="item in items" style="margin: 5px 0;">
+        <a style="color: white" href="javascript:void(0);" class="button button-block button-rounded button-primary button-large" @click="pushPage(item)">{{item.name}}</a>
+      </div>
 
     <div style="width: 900px;background: blue;height: 10px">123</div>
     <div class="scrollTopTest" style="width: 100px;height: 100px;background: brown" @click="scrollTopTest"></div>
@@ -34,25 +32,6 @@
     <ul class="cloneUl">
       <li>item 1</li><li>item 2</li><li>item 3</li>
     </ul>
-    <fieldset>
-      <legend>Which color do you prefer?</legend>
-      <ul>
-        <li>
-          <input type="radio" value="red" name="color" id="colorRed">
-          <label for="colorRed">Red</label>
-        </li>
-        <li>
-          <input type="radio" value="green" name="color" id="colorGreen">
-          <label for="colorGreen">Green</label>
-        </li>
-        <li>
-          <input type="radio" value="blue" name="color" id="colorBlue">
-          <label for="colorBlue">Blue</label>
-        </li>
-      </ul>
-    </fieldset>
-    <a href="www.baidu.com" name="">百度</a>
-    <a href="google">谷歌</a>
   </div>
 </template>
 
@@ -133,6 +112,10 @@
           {
             name: '对象探究',
             path: 'objectExplore'
+          },
+          {
+            name: '热区',
+            path: 'hotZone'
           }
         ]
       }
@@ -142,9 +125,6 @@
       var html = document.documentElement;
       console.log(html === document.childNodes[1]);
       console.log(html === document.lastChild);
-
-        var radios = document.getElementsByName('color');
-        console.log('111',document.links);
     },
     methods: {
       pushPage(item) {
