@@ -1,0 +1,193 @@
+.transformOrigin {
+  .stageBox {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+    background: url(../zuobiao@2x.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .stageBox img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -71px;
+    margin-top: -100px;
+  }
+  .stageBox1 {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    position: relative;
+    background: url(../zuobiao@2x.png) no-repeat center center;
+    background-size: 100% 100%;
+  }
+  .stageBox1 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -71px;
+    margin-top: -100px;
+  }
+  .stageBox img:nth-child(1) {
+    opacity: .5;
+    z-index: 1;
+    transform: rotate(10deg);
+  }
+  .stageBox img:nth-child(2) {
+    opacity: .6;
+    z-index: 2;
+    transform: rotate(25deg);
+  }
+  .stageBox img:nth-child(3) {
+    opacity: .7;
+    z-index: 3;
+    transform: rotate(35deg);
+  }
+  .stageBox img:nth-child(4) {
+    opacity: .8;
+    z-index: 4;
+    transform: rotate(45deg);
+  }
+  .stageBox img:nth-child(5) {
+    z-index: 5;
+    transform: rotate(60deg);
+  }
+  .second img {
+    transform-origin: bottom;
+  }
+  .third img {
+    transform-origin: bottom;
+  }
+
+  .stageBox1 img:nth-child(1) {
+    opacity: 0;
+    z-index: 2;
+    transform: rotate(-72deg);
+    animation: open1 1s linear forwards;
+  }
+  .stageBox1 img:nth-child(2) {
+    opacity: 0;
+    z-index: 3;
+    transform: rotate(-54deg);
+    animation: open2 1s linear 1s forwards;
+  }
+  .stageBox1 img:nth-child(3) {
+    opacity: 0;
+    z-index: 4;
+    transform: rotate(-36deg);
+    animation: open3 1s linear 2s forwards;
+  }
+  .stageBox1 img:nth-child(4) {
+    opacity: 0;
+    z-index: 5;
+    transform: rotate(-18deg);
+    animation: open4 1s linear 3s forwards;
+  }
+  .stageBox1 img:nth-child(5) {
+    opacity: 0;
+    z-index: 6;
+    transform: rotate(0deg);
+    animation: open5 1s linear 4s forwards;
+  }
+  .stageBox1 img:nth-child(6) {
+    opacity: 0;
+    z-index: 7;
+    transform: rotate(18deg);
+    animation: open6 1s linear 5s forwards;
+  }
+  .stageBox1 img:nth-child(7) {
+    opacity: 0;
+    z-index: 8;
+    transform: rotate(36deg);
+    animation: open7 1s linear 6s forwards;
+  }
+  .stageBox1 img:nth-child(8) {
+    opacity: 0;
+    z-index: 9;
+    transform: rotate(54deg);
+    animation: open8 1s linear 7s forwards;
+  }
+  .stageBox1 img:nth-child(9) {
+    //opacity: 0;
+    z-index: 10;
+    transform: rotate(72deg);
+    animation: open9 9s linear forwards;
+  }
+  @keyframes open1 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .1;
+    }
+  }
+  @keyframes open2 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .2;
+    }
+  }
+  @keyframes open3 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .3;
+    }
+  }
+  @keyframes open4 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .4;
+    }
+  }
+  @keyframes open5 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .5;
+    }
+  }
+  @keyframes open6 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .6;
+    }
+  }
+  @keyframes open7 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .7;
+    }
+  }
+  @keyframes open8 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: .8;
+    }
+  }
+  @keyframes open9 {
+    0% {
+      //opacity: 0;
+      //transform: translateY(0px);
+      transform: rotate(-72deg)
+    }
+    100% {
+      //transform: translateY(90px);
+      //opacity: 1;
+      transform: rotate(72deg);
+    }
+  }
+}

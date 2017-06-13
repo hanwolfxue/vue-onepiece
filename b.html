@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script>
+    window.addEventListener('message', function (event) {
+      document.getElementById('content').innerHTML += event.data + '<br/>';
+    }, false);
+  </script>
+</head>
+<body>
+Web page from http://localhost:63342
+<div id="content"></div>
+<a href="" target="" title="">2</a>
+<script typet="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+  var str = window.location.href.substr(-1, 1);
+//  $.ajax({
+//    type: 'get',
+//    url: 'http://www.domain.com/a.php' + '?m=' + str,
+//    async: true,
+//    success: function (res) {
+//      window.name = res;
+//    },
+//    error: function () {
+//      window.name = 'error'
+//    }
+//  })
+  var csHub = window.csHub = {
+    init: function (origin) {
+      this.originRule = origin;
+    },
+    get: function (key) {
+      return JSON.stringify(window.localStorage.getItem(key));
+    },
+    set: function (key, value) {
+      window.localStorage.setItem(key, JSON.stringify(value));
+    },
+    del: function (key) {
+      window.localStorage.removeItem(key);
+    }
+  };
+  window.addEventListener('message', function (event) {
+//    var message = JSON.parse(event.data), result, err = null;
+//    if (csHub.originRule.test(event.origin)) {
+//      try {
+//        result = csHub[message.method](message.key, message.value);
+//      }
+//      catch (e) {
+//        err = {
+//          message: e.message,
+//          stack: e.stack
+//        }
+//      }
+//      window.parent.postMessage(JSON.stringify({
+//        error: err,
+//        method: message.method,
+//        key: message.key,
+//        result: result
+//      }), event.origin);
+//    }
+  }, false);
+</script>
+</body>
+</html>

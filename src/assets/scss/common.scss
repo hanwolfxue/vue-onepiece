@@ -1,0 +1,46 @@
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-newLine {
+  flex-wrap: wrap;
+}
+
+.devideLine {
+  height: 0;
+  width: 100%;
+  border-top: 1px solid red;
+}
+
+.blueBack {
+  background: #1B9AF7;
+}
+
+.greenBack {
+  background: #42b983;
+}
+
+.relativeBox {
+  position: relative;
+}
+
+.absoluteBox {
+  position: absolute;
+}

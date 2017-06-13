@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+  <title>Test Web worker</title>
+  <script>
+    //    function init() {
+    //      var worker = new Worker('compute.js');
+    //      worker.onmessage = function (event) {
+    //        document.getElementById('result').innerHTML += event.data + '<br/>';
+    //      }
+    //    }
+    function sendIt() {
+//      var popup = window.open('http://localhost:8080/#/home');
+//      setTimeout(function () {
+//        popup.postMessage(
+//          '1234',
+//          'http://localhost:8080'
+//        );
+//      },1000)
+      console.log('123', window.screenY);
+
+//      document.getElementById('otherPage').contentWindow.postMessage(
+//        document.getElementById('message').value,
+//        'http://localhost:8080'
+//      )
+    }
+    setTimeout(function () {
+      document.getElementById('box1').innerHTML +=
+        document.documentElement.clientWidth;
+      document.getElementById('box2').innerHTML += window.innerWidth;
+      document.getElementById('box3').innerHTML += window.outerWidth
+    }, 0);
+
+    console.log('1', document.documentElement.clientWidth);
+    console.log('3', window.innerWidth);
+    setTimeout(function () {
+      console.log('scrollTop', document.body.scrollTop);
+      console.log('scrollTop', document.documentElement.scrollTop);
+      console.log('box1', document.querySelector('#box1').offsetWidth);
+      console.log('body offsetWidth', document.body.offsetWidth);
+    }, 4000)
+
+
+  </script>
+</head>
+<body>
+<div id="result"></div>
+<!--<iframe src="//localhost:8080/#home" id="otherPage">-->
+
+<!--</iframe>-->
+<br/>
+<br/>
+
+<input type="text" id="message">
+<input type="button" value="Send to child.comm" onclick="sendIt()">
+<iframe src="b.html" id="baiduIframe"></iframe>
+<div style="" id="box1"></div>
+<div style="" id="box2"></div>
+<div style="" id="box3"></div>
+<div style="height: 800px;width: 900px"></div>
+</body>
+</html>

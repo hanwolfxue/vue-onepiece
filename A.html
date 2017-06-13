@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<button>click!</button>
+<script>
+  var a = document.getElementsByTagName('button')[0];
+
+  a.onclick = function () {
+//    var inf = document.createElement('iframe');
+//    inf.src = 'http://www.domain.coom/window.name/b.html' + '?h=5';
+//    var body = document.getElementsByTagName('body')[0];
+//    body.appendChild(inf);
+//
+//    inf.onload = function () {
+//      inf.src = 'http://www.test.com/b.html';
+//      console.log(inf.contentWindow.name);
+//      body.removeChild(inf);
+//    }
+    location.href = 'http://localhost:63342/vue-onepiece/time.html?_ijt=qrfhrqhpaem12j3g3nao650lbk';
+  }
+
+//  function CSClient(url) {
+//    this.id = this._getId();
+//    this._init(url);
+//    this._origin = this._getOrigin(url);
+//    this._callbacks = {
+//      _get: {},
+//      _set: {},
+//      _del: {}
+//    }
+//    this._bindEvent();
+//  }
+//
+//  CSClient.prototype._getId = function () {   //id加一
+//    id = 0;
+//    return function () {
+//      return ++id;
+//    }
+//  }();
+//
+//  CSClient.prototype._init = function (url) {   //初始化iframe,并获取iframe的window对象
+//    var frame = document.createElement('iframe');
+//    frame.style.display = 'none';
+//    frame.src = url;
+//    document.body.appendChild(frame);
+//    this._hub = frame.contentWindow;
+//  }
+//
+//  CSClient.prototype._getOrigin = function (url) {   //获取url的来源
+//    var uri, origin;
+//    uri = document.createElement('a');
+//    uri.href = url;
+//    origin = uri.protocol + '//' + uri.host;
+//    return origin;
+//  }
+//
+//  CSClient.prototype._parseMessage = function (method, key, value) {    //解析成字符串
+//    return JSON.stringify({
+//      method: method,
+//      key: key,
+//      value: value
+//    })
+//  }
+//
+//  CSClient.prototype.bindEvent = function () {    //监听传过来的message
+//    var _this = this;
+//    window.addEventListener('message', function (event) {
+//      var data = JSON.parse(event.data);    //解析data
+//      var error = data.error;
+//      var result = data.result && JSON.parse(data.result) || null;
+//      try {
+//        _this._callbacks['_' + data.method][data.key](error, result);
+//      }
+//      catch (e) {
+//        console.log(e);
+//      }
+//    }, false);
+//  }
+//
+//  CSClient.prototype.get = function (key,callback) {
+//    this._hub.postMessage(this._parseMessage('get',key),this_origin);
+//    this._callbacks._get[key] = callback;
+//  }
+//
+//  CSClient.prototype.set = function (key,value,callback) {
+//    this._hub.postMessage(this._parseMessage('set',key,value),this_origin);
+//    this._callbacks._set[key] = callback;
+//  }
+//
+//  CSClient.prototype.del = function (key,callback) {
+//    this._hub.postMessage(this._parseMessage('del',key),this_origin);
+//    this._callbacks._del[key] = callback;
+//  }
+//
+//  var key = document.querySelector('#key');
+//  var value = document.querySelector('#value');
+//  var btn = document.querySelectorAll('button');
+//  var storage = new CSClient('http://b.com');
+//
+//  btn[0].onclick = function (e) {
+//    storage.get(key.value,function (err,result) {
+//      if(err){
+//        console.log(err);
+//        return;
+//      }
+//      console.log(result);
+//    })
+//  }
+//  btn[1].onclick = function (e) {
+//    storage.set(key.value,value.value,function (err) {
+//      if(err){
+//        console.log(err);
+//        return;
+//      }
+//      console.log('set ok');
+//    })
+//  }
+//  btn[2].onclick = function (e) {
+//    storage.del(key.value,function (err) {
+//      if(err){
+//        console.log(err);
+//        return;
+//      }
+//      console.log('del ok');
+//    })
+//  }
+</script>
+<script language="javascript" type="text/javascript">
+  window.NTKF_PARAM = {
+    siteid: "kf_9552",		            //企业ID，为固定值，必填
+    settingid: "kf_9552_1492150519088",	//接待组ID，为固定值，必填
+    uid: "123789456",		                //用户ID，未登录可以为空，但不能给null，uid赋予的值显示到小能客户端上
+    uname: "上方宝剑",		    //用户名，未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
+    isvip: "0",                          //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
+    userlevel: "1",		                //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
+    erpparam: "abc"                      //erpparam为erp功能的扩展字段，可选，购买erp功能后用于erp功能集成
+  }
+</script>
+
+<!--基础脚本加载 -->
+<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9552" charset="utf-8"></script>
+</body>
+</html>
