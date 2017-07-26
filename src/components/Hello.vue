@@ -116,6 +116,18 @@
           {
             name: '热区',
             path: 'hotZone'
+          },
+          {
+            name: '节点层次',
+            path: 'nodeLevel'
+          },
+          {
+            name: 'dom扩展',
+            path: 'domExpand'
+          },
+          {
+            name: 'event',
+            path: 'event'
           }
         ]
       }

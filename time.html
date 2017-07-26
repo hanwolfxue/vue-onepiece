@@ -2,7 +2,27 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
   <title> 卸载事件 </title>
+  <style>
+    @font-face {
+      font-family: 'testFont';
+      src: url('AleksandraC_vintage.otf');
+    }
+
+    @media screen and (max-device-width: 768px) and (orientation: portrait) {
+      .test {
+        width: 20px;
+        height: 20px;
+        border-top-left-radius: 15px;
+        border: 1px solid;
+      }
+    }
+    img[alt~="pock"] {
+        border: red thin solid;
+    }
+
+  </style>
   <script type="text/javascript">
     function delhandler() {
       alert(1);
@@ -32,7 +52,7 @@
     let cachedScript = {};
     function loadScript(src, callback, component, nocache) {
       let script = cachedScript[src];
-      console.log('script is',script);
+      console.log('script is', script);
       if (nocache && script) {
         script.parentNode.removeChild(script);
         script = null;
@@ -68,23 +88,124 @@
 </head>
 <body>
 欢迎学习JavaScript。
-<a href="#" id="editBtn">编辑</a>
-<a href="#" id="delBtn">删除</a>
+<p style="color: red">
+  <a href="#school" id="editBtn">编辑</a>
+  <a href="#" id="delBtn">删除</a>
+</p>
 <span>12344</span>
+<div id="school">高校龙中龙</div>
+<p style="font-family: 'testFont'">1234567890</p>
+<p style="">测试字体</p>
+<div style="font-size: 20px;height: 100px">
+  艾尼路
+  <p style="font-size: 150%">奥特曼大战小怪兽</p>
+</div>
+<ul style="list-style-type: square">
+  <li style="font-size: xx-small">xx-small</li>
+  <li style="font-size: x-small">x-small</li>
+  <li style="font-size: small">small</li>
+  <li style="font-size: medium">medium</li>
+  <li style="font-size: large">large</li>
+  <li style="font-size: x-large">x-large</li>
+  <li style="font-size: xx-large">xx-large</li>
+</ul>
+<ol style="list-style-type: upper-roman">
+  <li style="font-size: xx-small">xx-small</li>
+  <li style="font-size: x-small">x-small</li>
+  <li style="font-size: small">small</li>
+  <li style="font-size: medium">medium</li>
+  <li style="font-size: large">large</li>
+  <li style="font-size: x-large">x-large</li>
+  <li style="font-size: xx-large">xx-large</li>
+</ol>
+<div
+  style="background-image: url('src/assets/logo.png');width: 400px;height: 400px;background-position: center;background-repeat: no-repeat"></div>
+<div style="text-decoration: overline underline">欢迎学习JavaScript</div>
+<div style="width: 50px;height: 50px;border: solid">我是山大王</div>
+<div style="width: 50px;height: 50px;border: dotted">我是山大王</div>
+<div style="width: 50px;height: 50px;border: double">我是山大王</div>
+<div style="width: 50px;height: 50px;border: dashed">我是山大王</div>
+<div style="width: 50px;height: 50px;border: groove">我是山大王</div>
+<div style="width: 50px;height: 50px;border: inset">我是山大王</div>
+<div style="width: 50px;height: 50px;border: outset">我是山大王</div>
+<div style="width: 50px;height: 50px;border: ridge">我是山大王</div>
+<div style="" class="test">111
+</div>
+<div style="background: greenyellow;width: 400px;height: 50px;text-align: center;margin: 10px 0" id="myBtn">
+  <div style="">风雨彩虹铿锵玫瑰</div>
+</div>
+<video controls src="static/esen.mp4" width="300" height="200"></video>
+<div style="margin: 10px 0">
+  <span style="margin: 0 10px">大气不敢出</span>
+  <span style="margin: 0 10px">奇迹</span>
+</div>
+<div>
+  <div style="margin: 10px;width: 100px;height: 100px;background: red;float: right">
+    <div style="margin: 10px;width: 80px;height: 100px;background: blue"></div>
+  </div>
+  <p>
+    疗口腔溃疡：晚饭后用温开水漱净口腔，用一勺蜂蜜(最好原汁蜂蜜)敷在溃疡面处，含1一2分钟，再咽下，重复2一3次。第二天疼痛即减轻，连续治疗两天即基本痊愈。或是用筷子蘸蜂蜜一滴涂于口腔溃疡处，能在2小时内见效。最好是晚睡前涂于患处，含在口中，早晨起床能疼痛减轻许多。一日数次，效果更好。</p>
+</div>
+<img src="src/assets/pocK.jpg" class="imgload" alt="pock">
+<button onclick="alert('试试手气')">试手气</button>
 
-<script language="javascript" type="text/javascript">
-  window.NTKF_PARAM = {
-    siteid: "kf_9552",		            //企业ID，为固定值，必填
-    settingid: "kf_9552_1492150519088",	//接待组ID，为固定值，必填
-    uid: "12323",		                //用户ID，未登录可以为空，但不能给null，uid赋予的值显示到小能客户端上
-    uname: "eminyli@163.com",		    //用户名，未登录可以为空，但不能给null，uname赋予的值显示到小能客户端上
-    isvip: "0",                          //是否为vip用户，0代表非会员，1代表会员，取值显示到小能客户端上
-    userlevel: "1",		                //网站自定义会员级别，0-N，可根据选择判断，取值显示到小能客户端上
-    erpparam: "abc"                      //erpparam为erp功能的扩展字段，可选，购买erp功能后用于erp功能集成
+<span><div>sdfsdfsd</div></span>
+<script>
+  setTimeout(function () {
+    var btn = window.document.getElementById('myBtn');
+    btn.onclick = function () {
+      alert('子集');
+    }
+//    btn.attachEvent('onclick', function (event) {
+//      console.log(event.srcElement === this)
+//    })
+  }, 0)
+  var EventUtil = {
+    addHandler: function (element, type, handler) {
+      if (element.addEventListener) {
+        element.addEventListener(type, handler, false);
+      } else if (element.attachEvent) {
+        element.attachEvent('on' + type, handler);
+      } else {
+        element['on' + type] = handler;
+      }
+    },
+    removeHandler: function () {
+      if (element.removeEventListener) {
+        element.removeEventListener(type, handler, false);
+      } else if (element.attachEvent) {
+        element.detachEvent('on' + type, handler);
+      } else {
+        element['on' + type] = null;
+      }
+    },
+    getEvent: function (event) {
+      return event ? event : window.event;
+    },
+    getTarget: function (event) {
+      return event.target || event.srcElement
+    },
+    preventDefault: function (event) {
+      if (event.preventDefault) {
+        event.preventDefault();
+      } else {
+        event.returnValue = false;
+      }
+    },
+    stopPropagation: function (event) {
+      if (event.stopPropagation) {
+        event.stopPropagation();
+      } else {
+        event.cancelBubble = true;
+      }
+    }
   }
-</script>
+  var image = document.querySelector('imgload');
+  //  EventUtil.addHandler(image, "load", function (event) {
+  //    event = EventUtil.getEvent(event);
+  //    alert(EventUtil.getTarget(event).src);
+  //  })
 
-<!--基础脚本加载 -->
-<script type="text/javascript" src="http://dl.ntalker.com/js/xn6/ntkfstat.js?siteid=kf_9552" charset="utf-8"></script>
+</script>
 </body>
 </html>

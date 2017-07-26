@@ -150,6 +150,24 @@ export default new Router({
       component: function (resolve) {
         require(['../views/hotZone'], resolve)
       }
+    },
+    {
+      path: '/nodeLevel',
+      component: function (resolve) {
+        require(['../views/nodeLevel'], resolve)
+      }
+    },
+    {
+      path: '/domExpand',
+      component: function (resolve) {
+        require(['../views/domExpand'], resolve)
+      }
+    },
+    {
+      path: '/event',
+      component: function (resolve) {
+        require(['../views/event'], resolve)
+      }
     }
   ]
 })
